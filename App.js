@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import React from 'react';
-import Home from '../vlink/src/Home/';
+import Home from '../lawencomCRUD/src/Home/';
 
 const App = () => {
   return (

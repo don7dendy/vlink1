@@ -124,9 +124,6 @@ def enableHermes = project.ext.react.get("enableHermes", false);
  * Architectures to build native code for in debug.
  */
 def nativeArchitectures = project.getProperties().get("reactNativeDebugArchitectures")
-configurations.all {
-    resolutionStrategy { force 'androidx.core:core:1.6.0' }
-}
 
 android {
     ndkVersion rootProject.ext.ndkVersion
@@ -134,7 +131,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.vlink"
+        applicationId "com.lawencomcrud"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
